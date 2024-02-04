@@ -1,0 +1,550 @@
+$dark: #393b44;
+$light: #f1f3f8;
+$accent: cyan;
+
+body {
+  background: $dark;
+  color: $light;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+button {
+  cursor: pointer;
+  color: $light;
+  background: none;
+  border: none;
+  box-shadow: none;
+  text-transform: uppercase;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .5rem;
+}
+
+#un {
+  border: 2px solid;
+  transition: all ease .5s;
+
+  &:hover {
+    border-radius: 50px;
+  }
+}
+
+#deux {
+  border: 2px solid;
+  border-radius: 50px;
+  transition: all ease .5s;
+
+  &:hover {
+    border-radius: 0;
+  }
+}
+
+#trois {
+  border-bottom: 2px solid;
+  transition: all ease .5s;
+
+  &:hover {
+    border-radius: 10px;
+  }
+}
+
+#quatre {
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+  transition: all ease .5s;
+
+  &:hover {
+    border-radius: 10px;
+  }
+}
+
+#cinq {
+  border-left: 2px solid;
+  border-right: 2px solid;
+  transition: all ease .5s;
+
+  &:hover {
+    border-radius: 10px;
+  }
+}
+
+#six {
+  border: 2px solid;
+  transition: all ease .5s;
+
+  &:hover {
+    border-radius: 0 25px;
+  }
+}
+
+#sept {
+  border: 2px solid;
+  transition: all ease .5s;
+  border-radius: 0 25px;
+
+  &:hover {
+    border-radius: 25px 0;
+  }
+}
+
+#huit {
+  position: relative;
+  transition: color ease .5s;
+
+  &:before {
+    transition: width ease .5s;
+    content: '';
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $dark;
+
+    &:before {
+      width: 100%;
+      background: $accent;
+    }
+  }
+}
+
+#neuf {
+  position: relative;
+  transition: color ease .5s;
+
+  &:before {
+    transition: width ease .5s;
+    content: '';
+    height: 100%;
+    width: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $dark;
+
+    &:before {
+      width: 100%;
+      background: $accent;
+    }
+  }
+}
+
+#dix {
+  position: relative;
+  transition: color ease .5s;
+
+  &:before {
+    transition: width ease .5s;
+    content: '';
+    height: 100%;
+    width: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $dark;
+
+    &:before {
+      width: 100%;
+      background: $accent;
+    }
+  }
+}
+
+#onze {
+  position: relative;
+  transition: color ease .5s;
+
+  &:before {
+    transition: height ease .5s;
+    content: '';
+    height: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $dark;
+
+    &:before {
+      height: 100%;
+      background: $accent;
+    }
+  }
+}
+
+#douze {
+  position: relative;
+  transition: color ease .5s;
+
+  &:before {
+    transition: height ease .5s;
+    content: '';
+    height: 0;
+    top: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $dark;
+
+    &:before {
+      height: 100%;
+      background: $accent;
+    }
+  }
+}
+
+#treize {
+  position: relative;
+  transition: color ease .5s;
+
+  &:before {
+    transition: height ease .5s;
+    content: '';
+    height: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $dark;
+
+    &:before {
+      height: 100%;
+      background: $accent;
+    }
+  }
+}
+
+#quatorze {
+  position: relative;
+  transition: color ease .5s;
+  &:before, &:after {
+    transition: width ease .5s;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: .2rem;
+  }
+
+  &:before {
+    bottom: 0;
+    right: 0;
+  }
+
+  &:after {
+    top: 0;
+    left: 0;
+  }
+
+  &:hover {
+    color: $dark;
+    &:before, &:after {
+      background: $accent;
+      width: 100%;
+    }
+  }
+}
+
+#quinze {
+  position: relative;
+
+  &:before, &:after {
+    transition: width ease .5s;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: .2rem;
+    width: 0;
+  }
+
+  &:before {
+    bottom: 0;
+  }
+
+  &:after {
+    top: 0;
+  }
+
+  &:hover {
+    &:before, &:after {
+      background: $accent;
+      width: 100%;
+    }
+  }
+}
+
+#seize {
+  position: relative;
+
+  &:before, &:after {
+    transition: width ease .5s;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: .2rem;
+    width: 0;
+    left: 0;
+  }
+
+  &:before {
+    bottom: 0;
+  }
+
+  &:after {
+    top: 0;
+  }
+
+  &:hover {
+    &:before, &:after {
+      background: $accent;
+      width: 100%;
+    }
+  }
+}
+
+#dixsept {
+  position: relative;
+
+  &:before, &:after {
+    transition: width ease .5s;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: .2rem;
+    width: 0;
+    right: 0;
+  }
+
+  &:before {
+    bottom: 0;
+  }
+
+  &:after {
+    top: 0;
+  }
+
+  &:hover {
+    &:before, &:after {
+      background: $accent;
+      width: 100%;
+    }
+  }
+}
+
+#dixhuit {
+  position: relative;
+
+  &:before, &:after {
+    transition: width ease .5s;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: .2rem;
+    width: 0;
+  }
+
+  &:before {
+    bottom: 0;
+    right: 0;
+  }
+
+  &:after {
+    top: 0;
+    left: 0;
+  }
+
+  &:hover {
+    &:before, &:after {
+      background: $accent;
+      width: 100%;
+    }
+  }
+}
+
+#dixneuf{
+  position: relative;
+  &:before,&:after{
+    transition: height ease .5s;
+    background: $accent;
+    content: '';
+    position: absolute;
+    border-radius:50px;
+    z-index: -1;
+    height:0;
+    width:.2rem;
+  }
+  &:before{
+    left:0;
+  }
+  &:after{
+    right:0;
+  }
+  &:hover{
+    &:before,&:after{
+      height: 100%;
+    }
+  }
+}
+
+#vinght{
+  position: relative;
+  &:before,&:after{
+    transition: height ease .5s;
+    background: $accent;
+    content: '';
+    position: absolute;
+    border-radius:50px;
+    z-index: -1;
+    height:0;
+    width:.2rem;
+    top: 0;
+  }
+  &:before{
+    left:0;
+  }
+  &:after{
+    right:0;
+  }
+  &:hover{
+    &:before,&:after{
+      height: 100%;
+    }
+  }
+}
+
+#vinghtun{
+  position: relative;
+  &:before,&:after{
+    transition: height ease .5s;
+    background: $accent;
+    content: '';
+    position: absolute;
+    border-radius:50px;
+    z-index: -1;
+    height:0;
+    width:.2rem;
+    bottom: 0;
+  }
+  &:before{
+    left:0;
+  }
+  &:after{
+    right:0;
+  }
+  &:hover{
+    &:before,&:after{
+      height: 100%;
+    }
+  }
+}
+
+#vinghtdeux{
+  position: relative;
+  &:before,&:after{
+    transition: all ease .5s;
+    background: $accent;
+    content: '';
+    position: absolute;
+    border-radius:50px;
+    z-index: -1;
+    height:100%;
+    width:.2rem;
+    bottom: 0;
+  }
+  &:before{
+    left:0;
+  }
+  &:after{
+    right:0;
+  }
+  &:hover{
+    &:before,&:after{
+      width: 100%;
+    }
+  }
+}
+
+#vinghttrois{
+  position: relative;
+  &:before,&:after{
+    transition: width ease .5s;
+    background: $accent;
+    content: '';
+    position: absolute;
+    border-radius:50px;
+    z-index: -1;
+    height:100%;
+    width:.2rem;
+  }
+  &:before{
+    left:0;
+  }
+  &:after{
+    right:0;
+  }
+  &:hover{
+    &:before,&:after{
+      width: 100%;
+      height: .2rem;
+    }
+    &:before{
+      top: 0;
+    }
+    &:after{
+      bottom: 0;
+    }
+  }
+}
+
+#vinghtquatre{
+  position: relative;
+  &:before,&:after{
+    transition: width ease .5s;
+    background: $accent;
+    content: '';
+    position: absolute;
+    border-radius:50px;
+    z-index: -1;
+    height:.2rem;
+    width:100%;
+    bottom: 0;
+  }
+  &:before{
+    top:0;
+  }
+  &:after{
+    bottom:0;
+  }
+  &:hover{
+    &:before,&:after{
+      width: .2rem;
+      height: 100%;
+    }
+    &:before{
+      left: 0;
+    }
+    &:after{
+      right: 0;
+    }
+  }
+}

@@ -1,0 +1,484 @@
+body {
+  background: #393b44;
+  color: #f1f3f8;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+button {
+  cursor: pointer;
+  color: #f1f3f8;
+  background: none;
+  border: none;
+  box-shadow: none;
+  text-transform: uppercase;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+#un {
+  border: 2px solid;
+  transition: all ease 0.5s;
+}
+#un:hover {
+  border-radius: 50px;
+}
+
+#deux {
+  border: 2px solid;
+  border-radius: 50px;
+  transition: all ease 0.5s;
+}
+#deux:hover {
+  border-radius: 0;
+}
+
+#trois {
+  border-bottom: 2px solid;
+  transition: all ease 0.5s;
+}
+#trois:hover {
+  border-radius: 10px;
+}
+
+#quatre {
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+  transition: all ease 0.5s;
+}
+#quatre:hover {
+  border-radius: 10px;
+}
+
+#cinq {
+  border-left: 2px solid;
+  border-right: 2px solid;
+  transition: all ease 0.5s;
+}
+#cinq:hover {
+  border-radius: 10px;
+}
+
+#six {
+  border: 2px solid;
+  transition: all ease 0.5s;
+}
+#six:hover {
+  border-radius: 0 25px;
+}
+
+#sept {
+  border: 2px solid;
+  transition: all ease 0.5s;
+  border-radius: 0 25px;
+}
+#sept:hover {
+  border-radius: 25px 0;
+}
+
+#huit {
+  position: relative;
+  transition: color ease 0.5s;
+}
+#huit:before {
+  transition: width ease 0.5s;
+  content: "";
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: -1;
+}
+#huit:hover {
+  color: #393b44;
+}
+#huit:hover:before {
+  width: 100%;
+  background: cyan;
+}
+
+#neuf {
+  position: relative;
+  transition: color ease 0.5s;
+}
+#neuf:before {
+  transition: width ease 0.5s;
+  content: "";
+  height: 100%;
+  width: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+#neuf:hover {
+  color: #393b44;
+}
+#neuf:hover:before {
+  width: 100%;
+  background: cyan;
+}
+
+#dix {
+  position: relative;
+  transition: color ease 0.5s;
+}
+#dix:before {
+  transition: width ease 0.5s;
+  content: "";
+  height: 100%;
+  width: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+#dix:hover {
+  color: #393b44;
+}
+#dix:hover:before {
+  width: 100%;
+  background: cyan;
+}
+
+#onze {
+  position: relative;
+  transition: color ease 0.5s;
+}
+#onze:before {
+  transition: height ease 0.5s;
+  content: "";
+  height: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+#onze:hover {
+  color: #393b44;
+}
+#onze:hover:before {
+  height: 100%;
+  background: cyan;
+}
+
+#douze {
+  position: relative;
+  transition: color ease 0.5s;
+}
+#douze:before {
+  transition: height ease 0.5s;
+  content: "";
+  height: 0;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+#douze:hover {
+  color: #393b44;
+}
+#douze:hover:before {
+  height: 100%;
+  background: cyan;
+}
+
+#treize {
+  position: relative;
+  transition: color ease 0.5s;
+}
+#treize:before {
+  transition: height ease 0.5s;
+  content: "";
+  height: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+#treize:hover {
+  color: #393b44;
+}
+#treize:hover:before {
+  height: 100%;
+  background: cyan;
+}
+
+#quatorze {
+  position: relative;
+  transition: color ease 0.5s;
+}
+#quatorze:before, #quatorze:after {
+  transition: width ease 0.5s;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 0.2rem;
+}
+#quatorze:before {
+  bottom: 0;
+  right: 0;
+}
+#quatorze:after {
+  top: 0;
+  left: 0;
+}
+#quatorze:hover {
+  color: #393b44;
+}
+#quatorze:hover:before, #quatorze:hover:after {
+  background: cyan;
+  width: 100%;
+}
+
+#quinze {
+  position: relative;
+}
+#quinze:before, #quinze:after {
+  transition: width ease 0.5s;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 0.2rem;
+  width: 0;
+}
+#quinze:before {
+  bottom: 0;
+}
+#quinze:after {
+  top: 0;
+}
+#quinze:hover:before, #quinze:hover:after {
+  background: cyan;
+  width: 100%;
+}
+
+#seize {
+  position: relative;
+}
+#seize:before, #seize:after {
+  transition: width ease 0.5s;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 0.2rem;
+  width: 0;
+  left: 0;
+}
+#seize:before {
+  bottom: 0;
+}
+#seize:after {
+  top: 0;
+}
+#seize:hover:before, #seize:hover:after {
+  background: cyan;
+  width: 100%;
+}
+
+#dixsept {
+  position: relative;
+}
+#dixsept:before, #dixsept:after {
+  transition: width ease 0.5s;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 0.2rem;
+  width: 0;
+  right: 0;
+}
+#dixsept:before {
+  bottom: 0;
+}
+#dixsept:after {
+  top: 0;
+}
+#dixsept:hover:before, #dixsept:hover:after {
+  background: cyan;
+  width: 100%;
+}
+
+#dixhuit {
+  position: relative;
+}
+#dixhuit:before, #dixhuit:after {
+  transition: width ease 0.5s;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 0.2rem;
+  width: 0;
+}
+#dixhuit:before {
+  bottom: 0;
+  right: 0;
+}
+#dixhuit:after {
+  top: 0;
+  left: 0;
+}
+#dixhuit:hover:before, #dixhuit:hover:after {
+  background: cyan;
+  width: 100%;
+}
+
+#dixneuf {
+  position: relative;
+}
+#dixneuf:before, #dixneuf:after {
+  transition: height ease 0.5s;
+  background: cyan;
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  z-index: -1;
+  height: 0;
+  width: 0.2rem;
+}
+#dixneuf:before {
+  left: 0;
+}
+#dixneuf:after {
+  right: 0;
+}
+#dixneuf:hover:before, #dixneuf:hover:after {
+  height: 100%;
+}
+
+#vinght {
+  position: relative;
+}
+#vinght:before, #vinght:after {
+  transition: height ease 0.5s;
+  background: cyan;
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  z-index: -1;
+  height: 0;
+  width: 0.2rem;
+  top: 0;
+}
+#vinght:before {
+  left: 0;
+}
+#vinght:after {
+  right: 0;
+}
+#vinght:hover:before, #vinght:hover:after {
+  height: 100%;
+}
+
+#vinghtun {
+  position: relative;
+}
+#vinghtun:before, #vinghtun:after {
+  transition: height ease 0.5s;
+  background: cyan;
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  z-index: -1;
+  height: 0;
+  width: 0.2rem;
+  bottom: 0;
+}
+#vinghtun:before {
+  left: 0;
+}
+#vinghtun:after {
+  right: 0;
+}
+#vinghtun:hover:before, #vinghtun:hover:after {
+  height: 100%;
+}
+
+#vinghtdeux {
+  position: relative;
+}
+#vinghtdeux:before, #vinghtdeux:after {
+  transition: all ease 0.5s;
+  background: cyan;
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  z-index: -1;
+  height: 100%;
+  width: 0.2rem;
+  bottom: 0;
+}
+#vinghtdeux:before {
+  left: 0;
+}
+#vinghtdeux:after {
+  right: 0;
+}
+#vinghtdeux:hover:before, #vinghtdeux:hover:after {
+  width: 100%;
+}
+
+#vinghttrois {
+  position: relative;
+}
+#vinghttrois:before, #vinghttrois:after {
+  transition: width ease 0.5s;
+  background: cyan;
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  z-index: -1;
+  height: 100%;
+  width: 0.2rem;
+}
+#vinghttrois:before {
+  left: 0;
+}
+#vinghttrois:after {
+  right: 0;
+}
+#vinghttrois:hover:before, #vinghttrois:hover:after {
+  width: 100%;
+  height: 0.2rem;
+}
+#vinghttrois:hover:before {
+  top: 0;
+}
+#vinghttrois:hover:after {
+  bottom: 0;
+}
+
+#vinghtquatre {
+  position: relative;
+}
+#vinghtquatre:before, #vinghtquatre:after {
+  transition: width ease 0.5s;
+  background: cyan;
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  z-index: -1;
+  height: 0.2rem;
+  width: 100%;
+  bottom: 0;
+}
+#vinghtquatre:before {
+  top: 0;
+}
+#vinghtquatre:after {
+  bottom: 0;
+}
+#vinghtquatre:hover:before, #vinghtquatre:hover:after {
+  width: 0.2rem;
+  height: 100%;
+}
+#vinghtquatre:hover:before {
+  left: 0;
+}
+#vinghtquatre:hover:after {
+  right: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
