@@ -481,4 +481,28 @@ button {
   right: 0;
 }
 
+#vinghtcinq {
+  position: relative;
+}
+#vinghtcinq:before, #vinghtcinq:after {
+  transition: all ease 0.5s;
+  background: cyan;
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  z-index: -1;
+  height: 0;
+  width: 100%;
+}
+#vinghtcinq:hover:before, #vinghtcinq:hover:after {
+  width: 0.2rem;
+  height: 100%;
+}
+#vinghtcinq:hover:before {
+  left: 0;
+}
+#vinghtcinq:hover:after {
+  right: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
